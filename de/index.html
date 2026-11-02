@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Everyday - Ai | Praxisnahe KI-Workshops in Basel</title>
+<meta name="description" content="Praxisnahe KI-Workshops und Automatisierung für Schweizer KMU und Privatpersonen. Basel, Schweiz.">
+<link rel="alternate" hreflang="de-CH" href="https://everyday-ai.tech/">
+<link rel="alternate" hreflang="de" href="https://everyday-ai.tech/de/">
+<link rel="alternate" hreflang="x-default" href="https://everyday-ai.tech/">
+<style>
+@font-face{font-family:Fraunces;font-style:normal;font-weight:300 400;font-display:swap;src:url(../assets/fonts/fraunces.woff2) format('woff2')}
+@font-face{font-family:Fraunces;font-style:italic;font-weight:300 400;font-display:swap;src:url(../assets/fonts/fraunces-italic.woff2) format('woff2')}
+@font-face{font-family:Inter;font-style:normal;font-weight:300 500;font-display:swap;src:url(../assets/fonts/inter.woff2) format('woff2')}
+.lang .ch{width:12px;height:12px;margin-right:5px;opacity:.9}
+.lang a,.lang .on{display:inline-flex;align-items:center}
+footer a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+footer a:hover{color:var(--ink)}
+footer .r{display:flex;gap:20px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+:root{--ink:#2a2523;--soft:#5f5853;--muted:#8a837d;--bg:#f2f1ed;--line:#d8d5d0;--accent:#b5340b}
+html{background:#eae8e4}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;font-weight:300;color:var(--soft);background:linear-gradient(180deg,#f5f4f1,#eceae6);line-height:1.8;font-size:17px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:300;color:var(--ink);letter-spacing:-.01em}
+a{color:var(--ink)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 40px}
+.narrow{max-width:680px}
+header{padding:28px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center}
+header img{height:40px;display:block}
+header nav{display:flex;align-items:center;gap:22px}
+.lang{font-size:13px;letter-spacing:.08em;color:var(--muted)}
+.lang a{color:var(--muted);text-decoration:none}
+.lang a:hover{color:var(--ink)}
+.lang .on{color:var(--ink);font-weight:400}
+header a.mail{font-size:14px;color:var(--soft);text-decoration:none;border-bottom:1px solid var(--line)}
+.hero{padding:56px 0 40px}
+.hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(38px,5vw,58px);line-height:1.12;margin:22px 0 26px}
+h1 em{font-style:italic;color:var(--accent)}
+.lead{font-size:18px;max-width:34ch}
+.de{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--muted);margin-top:8px}
+.cta{display:inline-block;margin-top:36px;font-weight:400;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:3px}
+.cta:hover{color:var(--accent)}
+.hero img{width:100%;}
+section{padding:120px 0 0}
+h2{font-size:clamp(28px,3.4vw,38px);line-height:1.2;margin-bottom:20px}
+.label{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:18px;display:block}
+.price-line{font-family:Fraunces,Georgia,serif;font-size:20px;color:var(--ink);margin-top:14px;padding-left:14px;border-left:1px solid var(--accent)}
+.mods{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;gap:72px 64px}
+.mod{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:start}
+.mod img{width:120px;height:120px;object-fit:cover;border-radius:12px}
+.mod .mp{font-family:Fraunces,Georgia,serif;color:var(--ink);font-size:17px;margin:-6px 0 12px}
+.mod .n{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.mod h3{font-size:23px;line-height:1.25;margin:6px 0 12px}
+.mod p{font-size:15px;line-height:1.65;margin-bottom:6px}
+.mod b{font-family:Fraunces,Georgia,serif;font-weight:400;color:var(--accent);margin-right:6px}
+.mod .who{color:var(--muted);font-style:italic;font-family:Fraunces,Georgia,serif;margin-top:10px}
+@media(max-width:760px){.mods{grid-template-columns:1fr;gap:56px}.mod{grid-template-columns:84px 1fr;gap:18px}.mod img{width:84px;height:84px}}
+.list{list-style:none;margin-top:40px;border-top:1px solid var(--line)}
+.list li{display:grid;grid-template-columns:56px 1fr auto;gap:20px;align-items:baseline;padding:26px 0;border-bottom:1px solid var(--line)}
+.list .n{font-family:Fraunces,Georgia,serif;color:var(--accent);font-size:18px}
+.list h3{font-size:22px;margin-bottom:2px}
+.list p{font-size:15px;color:var(--muted)}
+.list .p{font-family:Fraunces,Georgia,serif;font-size:19px;color:var(--ink);white-space:nowrap}
+.note{font-size:14px;color:var(--muted);margin-top:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.two .p{color:var(--ink);font-family:Fraunces,Georgia,serif;font-size:19px;margin-top:12px}
+.coral img{width:100%;border-radius:4px;opacity:.95}
+.proof{text-align:center;font-family:Fraunces,Georgia,serif;font-style:italic;font-size:20px;color:var(--soft)}
+.proof:before,.proof:after{content:"";display:block;width:48px;height:1px;background:var(--accent);margin:0 auto 28px}
+.proof:after{margin:28px auto 0}
+.meetup{text-align:center;margin-top:72px}
+.meetup .t{font-family:Fraunces,Georgia,serif;font-size:22px;color:var(--ink)}
+.meetup .m{font-size:14px;color:var(--muted);margin-top:4px}
+.stars{display:inline-flex;gap:4px;vertical-align:-2px;margin-right:8px}
+.stars svg{width:15px;height:15px}
+.meetup .r{margin-top:14px;font-size:15px}
+.meetup .tags{font-size:13px;letter-spacing:.04em;color:var(--muted);margin-top:10px}
+.meetup .cta{margin-top:22px}
+.letter p{font-size:18px;margin-bottom:18px}
+.contact{text-align:center;padding-bottom:120px}
+.contact a.big{font-family:Fraunces,Georgia,serif;font-size:clamp(24px,4vw,34px);text-decoration:none;color:var(--ink);border-bottom:1px solid var(--accent)}
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+footer img{height:32px;opacity:.8}
+@media(max-width:760px){
+ .hero .wrap,.two{grid-template-columns:1fr;gap:40px}
+ .hero{padding:24px 0 0}
+ section{padding:88px 0 0}
+ .list li{grid-template-columns:36px 1fr;row-gap:4px}
+ .list .p{grid-column:2}
+ .contact{padding-bottom:88px}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="../assets/logo.png" alt="Everyday - Ai"><nav><span class="lang"><a href="../" lang="en" hreflang="en">EN</a> / <span class="on" aria-current="true"><svg class="ch" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="5" fill="#d52b1e"/><path fill="#fff" d="M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z"/></svg>DE</span></span><a class="mail" href="mailto:shawn@everyday-ai.info">Email</a></nav></div></header>
+
+<div class="hero"><div class="wrap">
+<div>
+<span class="kicker">Basel · KI-Workshops</span>
+<h1>Wir verkaufen keine KI. <em>Wir bringen sie für Sie zum Laufen.</em></h1>
+<p class="lead">Ich helfe Schweizer Teams und neugierigen Menschen, KI im Arbeitsalltag zu nutzen.</p>
+<p class="de">KI, die im Alltag funktioniert.</p>
+<a class="cta" href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">Schreiben Sie mir →</a>
+</div>
+<img src="../assets/hero.webp" alt="Ein kleiner Orangenbaum in einer weissen Schale">
+</div></div>
+
+<section id="workshops"><div class="wrap">
+<span class="label">Workshops</span>
+<h2>Vier Module, in Ihrem Tempo.</h2>
+<p class="narrow">Gruppenworkshops für Firmen, Teams und Gruppen, vor Ort oder online. Jedes Modul umfasst zwei Workshops.</p>
+<div class="mods">
+<article class="mod"><img src="../assets/m1.webp" alt="" loading="lazy"><div><span class="n">Modul I · Grundlagen</span><h3>Supercharge Your Daily Flow</h3><p class="mp">CHF 600</p><p><b>A</b> KI-Grundlagen und die wichtigsten Tools: ChatGPT, Claude, Gemini.</p><p><b>B</b> Wirksam mit KI kommunizieren und Prompt Engineering.</p><p class="who">Für komplette Einsteiger.</p></div></article>
+<article class="mod"><img src="../assets/m2.webp" alt="" loading="lazy"><div><span class="n">Modul II · Fortgeschritten</span><h3>Building Your Second Brain</h3><p class="mp">CHF 1’200</p><p><b>A</b> Die C.O.D.E. Methode mit KI: Capture, Organize, Distill, Express.</p><p><b>B</b> Ihr eigener, massgeschneiderter KI-Assistent.</p><p class="who">Für Wissensarbeitende und Kreative.</p></div></article>
+<article class="mod"><img src="../assets/m3.webp" alt="" loading="lazy"><div><span class="n">Modul III · Vertiefung</span><h3>Human Augmented Process Automation</h3><p class="mp">CHF 1’600</p><p><b>A</b> Grundlagen der Automatisierung: E-Mail, Daten, Administration.</p><p><b>B</b> KI-Agenten und komplexe Workflows.</p><p class="who">Für Unternehmer und Betriebsverantwortliche.</p></div></article>
+<article class="mod"><img src="../assets/m4.webp" alt="" loading="lazy"><div><span class="n">Modul IV · Experte</span><h3>Build Anything</h3><p class="mp">CHF 2’800</p><p><b>A</b> Vibe Coding mit v0, Bolt, Replit und Lovable.</p><p><b>B</b> Vom Prototyp zum fertigen Produkt: Deployment und Versionskontrolle.</p><p class="who">Für Gründer und Innovationsteams.</p></div></article>
+</div>
+</div></section>
+
+<section><div class="wrap two">
+<div>
+<span class="label">Für Firmen</span>
+<h2>KI im Vertrieb einsetzen</h2>
+<p>Ein 75-minütiger Vortrag über KI im Verkauf, für Ihr Team.</p>
+<h2 style="margin-top:56px">Automatisierung und Beratung</h2>
+<p>Ich baue Automatisierungen, die echte Stunden sparen, und zeige Ihnen, wo sich KI lohnt.</p>
+<p class="p">Ab CHF 200/h</p>
+</div>
+<div class="coral"><img src="../assets/coral.webp" alt="Abstrakte orange Partikelformen"></div>
+</div></section>
+
+<section><div class="wrap">
+<p class="proof">Workshops durchgeführt für die Gemeinde Riehen und das Haus der Universität Bern.</p>
+<svg width="0" height="0" style="position:absolute"><defs><linearGradient id="half"><stop offset="50%" stop-color="#b5340b"/><stop offset="50%" stop-color="transparent"/></linearGradient></defs></svg>
+<div class="meetup">
+<p class="t">Everyday Ai auf Meetup</p>
+<p class="m">Basel · 3’428 Mitglieder</p>
+<p class="r"><span class="stars" role="img" aria-label="Bewertet mit 4,5 von 5"><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z" fill="#b5340b" stroke="#b5340b" stroke-width="1" stroke-linejoin="round"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z" fill="#b5340b" stroke="#b5340b" stroke-width="1" stroke-linejoin="round"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z" fill="#b5340b" stroke="#b5340b" stroke-width="1" stroke-linejoin="round"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z" fill="#b5340b" stroke="#b5340b" stroke-width="1" stroke-linejoin="round"/></svg><svg viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z" fill="url(#half)" stroke="#b5340b" stroke-width="1" stroke-linejoin="round"/></svg></span>4,5 von 5 · 121 Bewertungen</p>
+<p class="tags">Herzlicher Gastgeber · Spannend · Pünktlicher Start · Wie beschrieben</p>
+<a class="cta" href="https://www.meetup.com/everyday-ai-supercharge-your-daily-flow/" target="_blank" rel="noopener">Der Gruppe beitreten →</a>
+</div>
+</div></section>
+
+<section id="about"><div class="wrap narrow letter">
+<span class="label">Ein paar Worte von mir</span>
+<p>Ich war über zehn Jahre als Product Owner und Manager in Enterprise Tech und KI tätig.</p>
+<p>Am meisten freut mich der Moment, in dem ein Tool klickt und jemand eine Stunde seines Tages zurückgewinnt. Ich unterrichte auf Deutsch und Englisch.</p>
+<p style="color:var(--ink);font-family:Fraunces,Georgia,serif">Shawn Böhm</p>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<h2>Sagen Sie Hallo.</h2>
+<p style="margin-bottom:28px">Erzählen Sie mir, was KI für Sie erledigen soll.</p>
+<a class="big" href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">shawn@everyday-ai.info</a>
+</div></section>
+
+<footer><div class="wrap"><img src="../assets/logo.png" alt="Everyday - Ai"><span class="r"><a href="impressum/">Impressum &amp; Datenschutz</a><span>© 2026 Everyday - Ai · Basel</span></span></div></footer>
+</body></html>
