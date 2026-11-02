@@ -80,6 +80,15 @@ h2{font-size:clamp(28px,3.4vw,38px);line-height:1.2;margin-bottom:20px}
 .meetup .tags{font-size:13px;letter-spacing:.04em;color:var(--muted);margin-top:10px}
 .meetup .cta{margin-top:22px}
 .letter p{font-size:18px;margin-bottom:18px}
+.btn{display:inline-block;margin-top:36px;background:var(--accent);color:#fff;text-decoration:none;font-weight:400;font-size:16px;padding:12px 24px;border-radius:999px;transition:background .2s}
+.btn:hover{background:#9a2c09}
+.alt{margin-left:22px;font-size:15px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.alt{white-space:nowrap}
+@media(max-width:760px){.alt{display:inline-block;margin:18px 0 0;}.hero .btn+.alt{display:table}}
+.alt:hover{color:var(--ink)}
+.contact .btn{margin-top:4px;font-size:18px;padding:14px 30px}
+.contact .or{margin-top:26px;font-size:15px;color:var(--muted)}
+.contact .or a{color:var(--soft);text-decoration:none;border-bottom:1px solid var(--line)}
 .contact{text-align:center;padding-bottom:120px}
 .contact a.big{font-family:Fraunces,Georgia,serif;font-size:clamp(24px,4vw,34px);text-decoration:none;color:var(--ink);border-bottom:1px solid var(--accent)}
 footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--muted)}
@@ -101,21 +110,21 @@ footer img{height:32px;opacity:.8}
 <div class="hero"><div class="wrap">
 <div>
 <span class="kicker">Basel · KI-Workshops</span>
-<h1>Wir verkaufen keine KI. <em>Wir bringen sie für Sie zum Laufen.</em></h1>
+<h1>Wir verkaufen keine KI. <em>Wir bringen sie für dich zum Laufen.</em></h1>
 <p class="lead">Ich helfe Schweizer Teams und neugierigen Menschen, KI im Arbeitsalltag zu nutzen.</p>
 <p class="de">KI, die im Alltag funktioniert.</p>
-<a class="cta" href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">Schreiben Sie mir →</a>
+<a class="btn" href="https://cal.com/everyday-ai/consultation" target="_blank" rel="noopener">Termin buchen →</a><a class="alt" href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">oder schreib mir</a>
 </div>
 <img src="../assets/hero.webp" alt="Ein kleiner Orangenbaum in einer weissen Schale">
 </div></div>
 
 <section id="workshops"><div class="wrap">
 <span class="label">Workshops</span>
-<h2>Vier Module, in Ihrem Tempo.</h2>
+<h2>Vier Module, in deinem Tempo.</h2>
 <p class="narrow">Gruppenworkshops für Firmen, Teams und Gruppen, vor Ort oder online. Jedes Modul umfasst zwei Workshops.</p>
 <div class="mods">
 <article class="mod"><img src="../assets/m1.webp" alt="" loading="lazy"><div><span class="n">Modul I · Grundlagen</span><h3>Supercharge Your Daily Flow</h3><p class="mp">CHF 600</p><p><b>A</b> KI-Grundlagen und die wichtigsten Tools: ChatGPT, Claude, Gemini.</p><p><b>B</b> Wirksam mit KI kommunizieren und Prompt Engineering.</p><p class="who">Für komplette Einsteiger.</p></div></article>
-<article class="mod"><img src="../assets/m2.webp" alt="" loading="lazy"><div><span class="n">Modul II · Fortgeschritten</span><h3>Building Your Second Brain</h3><p class="mp">CHF 1’200</p><p><b>A</b> Die C.O.D.E. Methode mit KI: Capture, Organize, Distill, Express.</p><p><b>B</b> Ihr eigener, massgeschneiderter KI-Assistent.</p><p class="who">Für Wissensarbeitende und Kreative.</p></div></article>
+<article class="mod"><img src="../assets/m2.webp" alt="" loading="lazy"><div><span class="n">Modul II · Fortgeschritten</span><h3>Building Your Second Brain</h3><p class="mp">CHF 1’200</p><p><b>A</b> Die C.O.D.E. Methode mit KI: Capture, Organize, Distill, Express.</p><p><b>B</b> Dein eigener, massgeschneiderter KI-Assistent.</p><p class="who">Für Wissensarbeitende und Kreative.</p></div></article>
 <article class="mod"><img src="../assets/m3.webp" alt="" loading="lazy"><div><span class="n">Modul III · Vertiefung</span><h3>Human Augmented Process Automation</h3><p class="mp">CHF 1’600</p><p><b>A</b> Grundlagen der Automatisierung: E-Mail, Daten, Administration.</p><p><b>B</b> KI-Agenten und komplexe Workflows.</p><p class="who">Für Unternehmer und Betriebsverantwortliche.</p></div></article>
 <article class="mod"><img src="../assets/m4.webp" alt="" loading="lazy"><div><span class="n">Modul IV · Experte</span><h3>Build Anything</h3><p class="mp">CHF 2’800</p><p><b>A</b> Vibe Coding mit v0, Bolt, Replit und Lovable.</p><p><b>B</b> Vom Prototyp zum fertigen Produkt: Deployment und Versionskontrolle.</p><p class="who">Für Gründer und Innovationsteams.</p></div></article>
 </div>
@@ -125,9 +134,9 @@ footer img{height:32px;opacity:.8}
 <div>
 <span class="label">Für Firmen</span>
 <h2>KI im Vertrieb einsetzen</h2>
-<p>Ein 75-minütiger Vortrag über KI im Verkauf, für Ihr Team.</p>
+<p>Ein 75-minütiger Vortrag über KI im Verkauf, für dein Team.</p>
 <h2 style="margin-top:56px">Automatisierung und Beratung</h2>
-<p>Ich baue Automatisierungen, die echte Stunden sparen, und zeige Ihnen, wo sich KI lohnt.</p>
+<p>Ich baue Automatisierungen, die echte Stunden sparen, und zeige dir, wo sich KI lohnt.</p>
 <p class="p">Ab CHF 200/h</p>
 </div>
 <div class="coral"><img src="../assets/coral.webp" alt="Abstrakte orange Partikelformen"></div>
@@ -153,9 +162,10 @@ footer img{height:32px;opacity:.8}
 </div></section>
 
 <section class="contact" id="contact"><div class="wrap">
-<h2>Sagen Sie Hallo.</h2>
-<p style="margin-bottom:28px">Erzählen Sie mir, was KI für Sie erledigen soll.</p>
-<a class="big" href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">shawn@everyday-ai.info</a>
+<h2>Sag Hallo.</h2>
+<p style="margin-bottom:28px">Erzähl mir, was KI für dich erledigen soll.</p>
+<a class="btn" href="https://cal.com/everyday-ai/consultation" target="_blank" rel="noopener">Termin buchen →</a>
+<p class="or">Oder schreib mir an <a href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">shawn@everyday-ai.info</a></p>
 </div></section>
 
 <footer><div class="wrap"><img src="../assets/logo.png" alt="Everyday - Ai"><span class="r"><a href="impressum/">Impressum &amp; Datenschutz</a><span>© 2026 Everyday - Ai · Basel</span></span></div></footer>

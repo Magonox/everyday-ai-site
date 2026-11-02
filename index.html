@@ -80,6 +80,15 @@ h2{font-size:clamp(28px,3.4vw,38px);line-height:1.2;margin-bottom:20px}
 .meetup .tags{font-size:13px;letter-spacing:.04em;color:var(--muted);margin-top:10px}
 .meetup .cta{margin-top:22px}
 .letter p{font-size:18px;margin-bottom:18px}
+.btn{display:inline-block;margin-top:36px;background:var(--accent);color:#fff;text-decoration:none;font-weight:400;font-size:16px;padding:12px 24px;border-radius:999px;transition:background .2s}
+.btn:hover{background:#9a2c09}
+.alt{margin-left:22px;font-size:15px;color:var(--muted);text-decoration:none;border-bottom:1px solid var(--line)}
+.alt{white-space:nowrap}
+@media(max-width:760px){.alt{display:inline-block;margin:18px 0 0;}.hero .btn+.alt{display:table}}
+.alt:hover{color:var(--ink)}
+.contact .btn{margin-top:4px;font-size:18px;padding:14px 30px}
+.contact .or{margin-top:26px;font-size:15px;color:var(--muted)}
+.contact .or a{color:var(--soft);text-decoration:none;border-bottom:1px solid var(--line)}
 .contact{text-align:center;padding-bottom:120px}
 .contact a.big{font-family:Fraunces,Georgia,serif;font-size:clamp(24px,4vw,34px);text-decoration:none;color:var(--ink);border-bottom:1px solid var(--accent)}
 footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--muted)}
@@ -104,7 +113,7 @@ footer img{height:32px;opacity:.8}
 <h1>We don't sell A.i. <em>We make it work for you.</em></h1>
 <p class="lead">I help Swiss teams and curious people use AI in their everyday work.</p>
 <p class="de">KI, die im Alltag funktioniert.</p>
-<a class="cta" href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">Write to me →</a>
+<a class="btn" href="https://cal.com/everyday-ai/consultation" target="_blank" rel="noopener">Book a call →</a><a class="alt" href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">or write to me</a>
 </div>
 <img src="assets/hero.webp" alt="A small orange tree growing from a white bowl">
 </div></div>
@@ -155,7 +164,8 @@ footer img{height:32px;opacity:.8}
 <section class="contact" id="contact"><div class="wrap">
 <h2>Say hello.</h2>
 <p style="margin-bottom:28px">Tell me what you want AI to do for you.</p>
-<a class="big" href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">shawn@everyday-ai.info</a>
+<a class="btn" href="https://cal.com/everyday-ai/consultation" target="_blank" rel="noopener">Book a call →</a>
+<p class="or">Or write to me at <a href="mailto:shawn@everyday-ai.info?subject=Everyday%20-%20Ai">shawn@everyday-ai.info</a></p>
 </div></section>
 
 <footer><div class="wrap"><img src="assets/logo.png" alt="Everyday - Ai"><span class="r"><a href="impressum/">Impressum &amp; Privacy</a><span>© 2026 Everyday - Ai · Basel</span></span></div></footer>
